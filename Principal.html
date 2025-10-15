@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>agrostar website | vamo</title>
+        <link rel="shortcut icon" href="img/tres.jpg" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="css/estys.css">
+    </head>
+    <body>
+        <!-- Menu Desplegable -->
+        <!-- Primario -->
+        <header>
+            
+            <a href="#" class="logo"></a>
+            <ul>
+                <li><a href="Principa.html" class="active">Home</a></li>
+                <li><a href="Indexxx.html">Plantas❀</a></li>
+                <li><a href="Tienda.html">Tienda☀</a></li>
+                <li><a href="#">Contactos</a></li>
+            </ul>
+           
+        </header>
+        <section>
+            <img src="img/stars.png" id="Stars">
+            <img src="img/moo2.png" id="moo2">
+            <img src="img/mountains_behind.png" id="mountains_behind">
+            <img src="img/mountains_front.png" id="mountains_front">
+            <h2 id="text">AgroSt❀r</h2>
+            <a href="#sec" id="btn">Mas Informacion</a>
+        <img src="img/mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+    <h2>¿Sabias que...?</h2>
+    <p><b> Por medio de las hojas, las plantas realizan la fotosíntesis, respiran y producen los alimentos. La respiración se produce durante el día y la noche; para ello, las plantas toman el oxígeno del aire y desprenden dióxido de carbono.
+    Biologia: las plantas son organismos mayormente fotosinteticos sin capacidad locomotora, es decir, sin capacidad de desplazamiento, aunque si de movimiento, sus paredes celulares se componen principalmente de celulosa.
+    </b>
+    </p>
+        
+    </div>
+    <script>
+        let Stars = document.getElementById('Stars');
+        let moon = document.getElementById('moo2');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            Stars.style.left = value * 0.25 + 'px';
+            moo2.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 3.3 + 'px';
+            text.style.marginTop = value * 0.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+    </body>
+</html>
+
+  
